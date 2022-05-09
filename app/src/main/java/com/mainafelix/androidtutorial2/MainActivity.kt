@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +13,10 @@ class MainActivity : AppCompatActivity() {
         val Button = findViewById<Button>(R.id.btnApply)
         Button.setOnClickListener {
           Intent(this,MainActivity2::class.java).also {
+              val name = findViewById<EditText>(R.id.editTextTextPersonName)
+              val age = findViewById<EditText>(R.id.editTextTextPersonName2)
+              val country = findViewById<EditText>(R.id.editTextTextPersonName3)
+              val name1 = name.text.toString()
               startActivity(it)
           }
         }
