@@ -7,6 +7,7 @@
     tools:context=".SpinnerActivity">
 
     <Spinner
+        android:id="@+id/spMonths"
         android:layout_width="218dp"
         android:layout_height="69dp"
         app:layout_constraintBottom_toBottomOf="parent"
