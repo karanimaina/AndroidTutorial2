@@ -17,6 +17,11 @@ class MainActivity : AppCompatActivity() {
               val age = findViewById<EditText>(R.id.editTextTextPersonName2)
               val country = findViewById<EditText>(R.id.editTextTextPersonName3)
               val name1 = name.text.toString()
+              val age1 = age.text.toString().toInt()
+              val country1 = country.text.toString()
+              it.putExtra("name",name1)
+              it.putExtra("age",age1)
+              it.putExtra("country",country1)
               startActivity(it)
           }
         }
