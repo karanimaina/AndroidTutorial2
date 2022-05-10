@@ -5,15 +5,24 @@ import android.content.pm.PackageManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.ActivityChooserView
 import androidx.core.app.ActivityCompat
 import java.util.jar.Manifest
 
 class Permission : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_permission)
+
+        val btn  = findViewById<Button>(R.id.btnPermissions)
+        btn.setOnClickListener {
+            requestPermission()
+        }
     }
     ///create a functioon that checks if the permission is granted
     private fun readOrWriteExternalStorage()=
@@ -44,6 +53,25 @@ class Permission : AppCompatActivity() {
         if (permissionToRequest.isNotEmpty()){
             ActivityCompat.requestPermissions(this,permissionToRequest.toTypedArray(),0)
         }
+//        create function thataccept the user to grant Requests
+//        > if permission have not been granted create a mutable List and add the permssions
+//        > check if the mutable lIst is not Emptyrequest  permission and convert the mutable List to TypedArray
+
+    }
+//
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+    if (requestCode ==0 && grantResults.isNotEmpty()){
+        for (i in grantResults.indices)//(similar to grant Result.size-1)
+        {
+            if (grantResults[i]==PackageManager.PERMISSION_GRANTED){
+                Log.d("permissionRequests","${permissions[i]} granted")
+            }
+        }    }
 
     }
 }
