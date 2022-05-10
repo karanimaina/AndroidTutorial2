@@ -31,7 +31,7 @@ class Permission : AppCompatActivity() {
     private fun locationPermissiom()=
         ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)== PackageManager.PERMISSION_GRANTED
      @RequiresApi(Build.VERSION_CODES.Q)
-     private fun readOrBsckGroundLocation()=//check if the user uses android Q orherwise app will crash
+     private fun readOrBackGroundLocation()=//check if the user uses android Q orherwise app will crash
         ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_BACKGROUND_LOCATION)== PackageManager.PERMISSION_GRANTED
 
     // request permissiom
@@ -40,7 +40,7 @@ class Permission : AppCompatActivity() {
     private  fun requestPermission(){
         //create a mutable List
         var permissionToRequest = mutableListOf<String>()// create  an empty Array  of Strings
-        if( readOrWriteExternalStorage()){
+        if( !readOrWriteExternalStorage()){
             //if permission hasn't been granted add  the Permission to the permission to requestArray
             permissionToRequest.add(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
         }
