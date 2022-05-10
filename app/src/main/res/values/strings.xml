@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Android Tutorial2</string>
+    <String_array name = "months">
+          <Item>January</Item>
+          <Item>Febriuary</Item>
+          <Item>March</Item>
+          <Item>April</Item>
+          <Item>May</Item>
+          <Item>June</Item>
+          <Item>July</Item>
+          <Item>August</Item>
+          <Item>September</Item>
+          <Item>October</Item>
+          <Item>November</Item>
+          <Item>December</Item>
+
+    </String_array>
 </resources>
