@@ -15,6 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorial2">
         <activity
+            android:name=".SpinnerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".DialogActivity"
             android:exported="true">
             <intent-filter>
@@ -51,10 +60,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity2"
+            android:name=".ExplicitIntents2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ExplicitIntent"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

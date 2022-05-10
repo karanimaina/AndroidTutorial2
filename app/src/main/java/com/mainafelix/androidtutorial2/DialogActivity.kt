@@ -34,6 +34,7 @@ class DialogActivity : AppCompatActivity() {
             //set an onClickListener  for the Button and call the .show(method on the  add contact dialog to show the dialog
             addContactDialog.show()
         }
+
         //providing multiple items in a dialog where auser can select one Alternative
         val options = arrayOf(" first ","second","third")
         val singleDialog = AlertDialog.Builder(this)
@@ -59,27 +60,32 @@ class DialogActivity : AppCompatActivity() {
             singleDialog.show()
         }
 
-        val  = AlertDialog.Builder(this)
+        val multiChoiceDiaLog = AlertDialog.Builder(this)
             .setTitle("choose one option")
             //choose the functions that takes an array
             //0 is the selected item by default
-            // create an onitem onclick listener"
-            .setSingleChoiceItems(options,0){dialogInterface, i ->
-                Toast.makeText(this,"you clicked on ${options[i]} ",Toast.LENGTH_SHORT).show()
+            // create an onitem onclick listener"                                     i refers to the index of the item that is checked or unchecked
+            .setMultiChoiceItems(options, booleanArrayOf(false,false,false)){ _,i,isChecked->           //dialogInterface,i,b ->
+            if (isChecked){
+                Toast.makeText(this, "you checked ${options[i]}",Toast.LENGTH_SHORT).show()
+            }else {
+                Toast.makeText(this, "you checked ${options[i]}",Toast.LENGTH_SHORT).show()
+            }
+                Toast.makeText(this, "you unchecked ${options[i]}",Toast.LENGTH_SHORT).show()
             }
             .setPositiveButton("Accept"){_,_  ->// dialogInterface, i -> //i describes which button was clicked
-                Toast.makeText(this," you accepted single choice dialog",Toast.LENGTH_LONG).show()
+                Toast.makeText(this," you accepted multi choice dialog",Toast.LENGTH_LONG).show()
             }
             // set a negative button such that onClick it it displays a toast message
             .setNegativeButton("Deline"){_,_  ->// dialogInterface, i -> //i describes which button was clicked
-                Toast.makeText(this," you declined single choice dialog",Toast.LENGTH_LONG).show()
+                Toast.makeText(this," you declined multi choice dialog",Toast.LENGTH_LONG).show()
             }
             //  call the create button to create an alert Dialog
             .create()
 
-        val btn2 = findViewById<Button>(R.id.btnDialog2)
-        btn2.setOnClickListener{
-            singleDialog.show()
+        val btn3 = findViewById<Button>(R.id.btnDialog3)
+        btn3.setOnClickListener{
+            multiChoiceDiaLog.show()
         }
     }
 }
