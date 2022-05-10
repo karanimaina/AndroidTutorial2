@@ -27,6 +27,12 @@ class MainActivity : AppCompatActivity() {
 //              it.putExtra("country",country1)
               it.putExtra("person",person) //passing the class  as a serializable
               startActivity(it)
+
+              // create a serializable data class
+              //take the data from the views and genrate a class object
+              //then use it .putExtra("Strinf  reference", class object)
+              //on the otber Activity createe a variable and use Intent.getSerislizbleExtra("pass the referenceString" then cast this serializable class to  the Data class
+              //set the text  of the text to  the person instance"
           }
         }
     }
