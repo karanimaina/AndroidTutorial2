@@ -1,5 +1,6 @@
 package com.mainafelix.androidtutorial2
 
+import android.app.Person
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,9 +20,12 @@ class MainActivity : AppCompatActivity() {
               val name1 = name.text.toString()
               val age1 = age.text.toString().toInt()
               val country1 = country.text.toString()
-              it.putExtra("name",name1)
-              it.putExtra("age",age1)
-              it.putExtra("country",country1)
+
+              val person = person(name1,age1,country1)
+//              it.putExtra("name",name1)
+//              it.putExtra("age",age1)
+//              it.putExtra("country",country1)
+              it.putExtra("person",person) //passing the class  as a serializable
               startActivity(it)
           }
         }
