@@ -1,17 +1,16 @@
 <resources>
     <string name="app_name">Android Tutorial2</string>
-     <string-array name ="months">
-          <Item>January</Item>
-          <Item>February</Item>
-          <Item>March</Item>
-          <Item>April</Item>
-          <Item>May</Item>
-          <Item>June</Item>
-          <Item>July</Item>
-          <Item>August</Item>
-          <Item>September</Item>
-          <Item>October</Item>
-          <Item>November</Item>
-          <Item>December</Item>
-    </string-array>
+<string-array name="months">
+    <item>jan</item>
+    <item>feb</item>
+    <item>mar</item>
+    <item>april</item>
+    <item>may</item>
+    <item>june</item>
+    <item>july</item>
+    <item>aug</item>
+    <item>sept</item>
+    <item>nov</item>
+    <item>dec</item>
+</string-array>
 </resources>
