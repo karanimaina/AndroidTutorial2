@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,8 @@ class MainActivity2 : AppCompatActivity() {
         val age = intent.getIntExtra("age", 0)
         val country = intent.getStringExtra("country")
         val person =" $name  is $age and lives in $country"
+        val tvPerson  = findViewById<TextView>(R.id.tvPerson)
+        tvPerson.text= person
 
     }
 }
