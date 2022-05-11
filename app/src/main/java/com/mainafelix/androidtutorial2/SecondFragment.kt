@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 //pass the id in the constructor of the fragment
-class FirstFragment : Fragment(R.layout.fragment_first) {
+class SecondFragment : Fragment(R.layout.fragment_first) {
 
 //inflates our view of the fragment this is similar to the setContent view of the activities
 //    override fun onCreateView(
