@@ -44,10 +44,10 @@ class Permission : AppCompatActivity() {
             //if permission hasn't been granted add  the Permission to the permission to requestArray
             permissionToRequest.add(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
         }
-        if(!readOrWriteExternalStorage()){
+        if(!locationPermissiom()){
             permissionToRequest.add(android.Manifest.permission.ACCESS_COARSE_LOCATION)
         }
-        if(!readOrWriteExternalStorage()){
+        if(!readOrBackGroundLocation()){
             permissionToRequest.add(android.Manifest.permission.ACCESS_BACKGROUND_LOCATION)
         }
         if (permissionToRequest.isNotEmpty()){
@@ -61,7 +61,7 @@ class Permission : AppCompatActivity() {
 //
     override fun onRequestPermissionsResult(
         requestCode: Int,
-        permissions: Array<out String>,
+        permissions: Array<String>,
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)

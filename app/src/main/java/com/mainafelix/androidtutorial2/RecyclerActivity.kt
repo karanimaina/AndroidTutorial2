@@ -36,7 +36,7 @@ class RecyclerActivity : AppCompatActivity() {
             val toDo = RecyClerTodo(title,false)
             //add  it to the todoListAdapter Class
             todoList.add(toDo)
-            ////  update the last ebtry
+            ////  update the last entry
             adapter.notifyItemInserted(todoList.size-1)
 
         }
