@@ -20,8 +20,8 @@ class SlidableMenuActivity : AppCompatActivity() {
         drawerLayout.addDrawerListener(toggle)
         // tell toggle to sync its state, to make it ready to use
         toggle.syncState()
-// support action bar produces a bac
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+// support action bar produces a back arrow that closses the nav bar
+    supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
