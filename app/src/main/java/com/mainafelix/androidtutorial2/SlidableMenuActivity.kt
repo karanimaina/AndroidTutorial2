@@ -3,6 +3,7 @@ package com.mainafelix.androidtutorial2
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.drawerlayout.widget.DrawerLayout
@@ -28,8 +29,12 @@ class SlidableMenuActivity : AppCompatActivity() {
         val nav = findViewById<NavigationView>(R.id.navView)
         nav.setNavigationItemSelectedListener {
             when(it.itemId){
-
+                R.id.miItem1 -> Toast.makeText(applicationContext,"selected item1 ",Toast.LENGTH_SHORT).show()
+                R.id.miItem2 -> Toast.makeText(applicationContext,"selected item2 ",Toast.LENGTH_SHORT).show()
+                R.id.miItem3 -> Toast.makeText(applicationContext,"selected item3 ",Toast.LENGTH_SHORT).show()
             }
+//            true means we handled the click
+            true
         }
     }
 
