@@ -7,10 +7,10 @@
     tools:context=".FirstFragment">
 
     <TextView
-        android:id="@+id/tvFirstFragment"
+        android:id="@+id/tvSecondFragment"
         android:layout_width="267dp"
         android:layout_height="60dp"
-        android:text="first  Fragment"
+        android:text="second Fragment"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
