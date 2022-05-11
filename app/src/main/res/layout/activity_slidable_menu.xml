@@ -24,6 +24,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 <!--    view that slides from left to right or displays on button toggle-->
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:headerLayout="@layout/nav_header"
