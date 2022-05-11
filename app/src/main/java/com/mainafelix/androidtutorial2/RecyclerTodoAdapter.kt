@@ -29,7 +29,7 @@ var  todos :List<RecyClerTodo>
 
     override fun onBindViewHolder(holder: RecViewHolder, position: Int) {
     holder.itemView.apply {
-        // access  the views and set the position  of the todos item to the views
+        // access  the views and set the position  of the todos item to the
         val title = findViewById<TextView>(R.id.tvTitle)
         val check = findViewById<CheckBox>(R.id.ChDone)
         title.text  = todos[position].title
