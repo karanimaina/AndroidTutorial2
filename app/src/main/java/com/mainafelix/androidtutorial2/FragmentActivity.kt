@@ -24,6 +24,8 @@ class FragmentActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().apply {
                 // replace the fragment that with flFragment
                 replace(R.id.flFragment,firstFragment)
+                //help  navigate from one fragment t another
+                addToBackStack(null)
                 //commit applies the changes to our transaction
                 commit()
             }
@@ -32,6 +34,8 @@ class FragmentActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().apply {
                 // replace the fragment that with flFragment
                 replace(R.id.flFragment,secondFragment)
+                //help  navigate from one fragment t another
+                addToBackStack(null)
                 //commit applies the changes to our transaction
                 commit()
             }
