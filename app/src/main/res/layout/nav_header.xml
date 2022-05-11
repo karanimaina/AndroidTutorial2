@@ -4,3 +4,4 @@
     android:layout_height="150dp"
     android:background="@color/purple_200"/>
 
+<!--nav  header is the space that exist on the nav drawer-->
