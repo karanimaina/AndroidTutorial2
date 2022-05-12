@@ -14,6 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorial2">
         <activity
+            android:name=".ServiceActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".IntentServiceActivity"
             android:exported="true">
             <intent-filter>
@@ -142,7 +151,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".IntentServiceClass"/>
+
+        <service android:name=".IntentServiceClass" />
     </application>
 
 </manifest>
