@@ -16,7 +16,7 @@ class SharedActivity : AppCompatActivity() {
         // there are 3 modes public,append and private the public  can be accessed throghout the program and the private is inaccesible by other classes
         // append appends the shared preferences
       //  the value of mode is fetched from  the context
-       val sharedPref = getSharedPreferences("myPref",Context.MODE_PRIVATE)
+       val sharedPref = getSharedPreferences("myPref",ontext.MODE_PRIVATE)
         // to write to shared pref we need an editor
         val editor = sharedPref.edit()
         val btnSave = findViewById<Button>(R.id.btnSave)
