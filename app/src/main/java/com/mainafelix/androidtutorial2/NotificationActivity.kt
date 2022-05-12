@@ -40,6 +40,7 @@ class NotificationActivity : AppCompatActivity() {
             .setSmallIcon(R.drawable.ic_notification)
                 //priority  means how important the notification is
             .setPriority(NotificationCompat.PRIORITY_HIGH)
+
                 // return anotification here
             .setContentIntent(pendingIntent)
             .build()
