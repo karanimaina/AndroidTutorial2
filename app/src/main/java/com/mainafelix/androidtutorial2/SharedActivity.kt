@@ -28,7 +28,7 @@ class SharedActivity : AppCompatActivity() {
         btnSave.setOnClickListener {
             val  name =edName.text.toString()
             val  age = edAge.text.toString().toInt()
-            val cbAdult = chec.isChecked
+            val cbAdult = chec.isChecke
             editor.apply {
                 // provide key  value pairs for saving
                 putString("name",name)
