@@ -58,7 +58,7 @@ class NotificationActivity : AppCompatActivity() {
                 NotificationManager.IMPORTANCE_HIGH).apply {
                     //make the led blink
                     lightColor = Color.GREEN
-                enableLights(true)
+                enableLights(tru e)
             }
             //create a notification manager which wil create a notification channel
             // cast the maanager of anyObject tpe to Notification Manager
