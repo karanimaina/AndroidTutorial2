@@ -42,6 +42,7 @@ class NotificationActivity : AppCompatActivity() {
             .setPriority(NotificationCompat.PRIORITY_HIGH)
                 // return anotification here
             .setContentIntent(pendingIntent)
+
             .build()
         val notificationManager = NotificationManagerCompat.from(this)
         val button = findViewById<Button>(R.id.noti)
