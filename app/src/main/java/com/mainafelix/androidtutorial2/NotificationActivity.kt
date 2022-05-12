@@ -65,8 +65,6 @@ class NotificationActivity : AppCompatActivity() {
             // cast the maanager of anyObject tpe to Notification Manager
             val manager   = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             manager.createNotificationChannel(channel)
-
-
         }
     }
 }
