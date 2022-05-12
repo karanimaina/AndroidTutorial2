@@ -54,6 +54,7 @@ class NotificationActivity : AppCompatActivity() {
         //check if the build version is greater than android Oreo
         if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.O) {
             //create a channel
+
             //sets the immportance- if the nnotificatiion should come with a sound
             val channel =NotificationChannel(CHANNEL_ID,CHANNE_NAME,
                 NotificationManager.IMPORTANCE_HIGH).apply {
