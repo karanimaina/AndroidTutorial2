@@ -27,7 +27,7 @@ class NotificationActivity : AppCompatActivity() {
         val pendingIntent  =  TaskStackBuilder.create(this).run{
             // this will add this Activity that we will open on the notification click hence adding it to our activity back stack
             addNextIntentWithParentStack(intent)
-            getPendingIntent(0,PendingIntent.FLAG_U PDATE_CURRENT)
+            getPendingIntent(0,PendingIntent.FLAG_UPDATE_CURRENT)
 
         }
 
@@ -42,6 +42,7 @@ class NotificationActivity : AppCompatActivity() {
             .setPriority(NotificationCompat.PRIORITY_HIGH)
                 // return anotification here
             .setContentIntent(pendingIntent)
+
             .build()
         val notificationManager = NotificationManagerCompat.from(this)
         val button = findViewById<Button>(R.id.noti)
