@@ -15,8 +15,8 @@ class NotificationActivity : AppCompatActivity() {
     //todo create  CHannel id
  val  CHANNEL_ID = "channelId "
     //todo create  channel Name
-    val CHANNE_NAME = "channelName"
-    val NOTIFICATION_ID = 0
+    private val CHANNE_NAME = "channelName"
+    private val NOTIFICATION_ID = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
