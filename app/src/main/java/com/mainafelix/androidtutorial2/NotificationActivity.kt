@@ -53,12 +53,12 @@ class NotificationActivity : AppCompatActivity() {
         //check if the build version is greater than android Oreo
         if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.O) {
             //create a channel
-                                                               //sets the immportance- if the nnotificatiion should come with a sound
+            //sets the immportance- if the nnotificatiion should come with a sound
             val channel =NotificationChannel(CHANNEL_ID,CHANNE_NAME,
                 NotificationManager.IMPORTANCE_HIGH).apply {
                     //make the led blink
                     lightColor = Color.GREEN
-                enableLights(tru e)
+                enableLights(true)
             }
             //create a notification manager which wil create a notification channel
             // cast the maanager of anyObject tpe to Notification Manager
