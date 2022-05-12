@@ -43,9 +43,8 @@ class SharedActivity : AppCompatActivity() {
                 val savedAge = sharedPref.getInt("age",0)
                 val savedAdult = sharedPref.getBoolean("isChecked",false)
                 edName.setText(savedName)
-
                 edAge.setText(savedAge)
-                chec .isChecked = savedAdult
+                chec .isChecked = savedAdul
             }
 
         }
