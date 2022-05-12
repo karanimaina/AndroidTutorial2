@@ -13,7 +13,7 @@ import androidx.core.app.NotificationManagerCompat
 
 class NotificationActivity : AppCompatActivity() {
     //todo create  CHannel id
- val  CHANNEL_ID = "channelId"
+ val  CHANNEL_ID = "channelId "
     //todo create  channel Name
     val CHANNE_NAME = "channelName"
     val NOTIFICATION_ID = 0
