@@ -24,7 +24,7 @@ class NotificationActivity : AppCompatActivity() {
 
         // create a pending Intent thay will allow us to click on the notificaton shown on the status bar
         val  intent = Intent(this,NotificationActivity::class.java)
-        val pendingIntent =  TaskStackBuilder.create(this).run{
+        val pendingIntent  =  TaskStackBuilder.create(this).run{
             // this will add this Activity that we will open on the notification click hence adding it to our activity back stack
             addNextIntentWithParentStack(intent)
             getPendingIntent(0,PendingIntent.FLAG_UPDATE_CURRENT)
