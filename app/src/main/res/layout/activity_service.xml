@@ -7,7 +7,7 @@
     tools:context=".ServiceActivity">
 
         <Button
-            android:id="@+id/btnIntent"
+            android:id="@+id/btnIntentService"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Start"
@@ -19,14 +19,14 @@
             app:layout_constraintVertical_bias="0.386" />
 
         <Button
-            android:id="@+id/btnService"
+            android:id="@+id/btnServiceService"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="stop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnIntent"
+            app:layout_constraintStart_toEndOf="@+id/btnIntentService"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.386" />
 
@@ -41,23 +41,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnService" />
+            app:layout_constraintTop_toBottomOf="@+id/btnServiceService" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/edxService"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Data String"
-            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintBottom_toTopOf="@+id/buttonService"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/buttonService"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
